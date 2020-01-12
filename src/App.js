@@ -37,7 +37,7 @@ const App = () => {
     if (loading) {
       return <p>Loading...</p>
     } else {
-      return news.map((n, i) => <p key={i}>{n.title}</p>)
+      return news.map((n, i) => <p key={i}><a href={n.url} target="_blank" rel="noopener noreferrer">{n.title}</a></p>)
     }
   }
 
